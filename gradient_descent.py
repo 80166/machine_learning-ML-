@@ -4,7 +4,7 @@ def gradient_descent(x, y):
     m = b = 0          # m is the slope and b is the intercept...
     iterations = 100
     n = len(x)
-    learning_rate = 0.0001
+    learning_rate = 0.0001 
     for i in range(iterations):
         y_predicted = m*x + b
         cost = (1/n) * sum({val**2 for val in (y-y_predicted)})
